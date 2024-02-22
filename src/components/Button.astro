@@ -1,0 +1,20 @@
+---
+import { twMerge } from 'tailwind-merge'
+interface Props {
+  outline?: boolean;
+  link: string;
+  text: string;
+}
+
+const { link, text, outline} = Astro.props 
+---
+
+<a href={link}>
+  <button class={twMerge(
+    "font-medium text-base py-[20px] border-2 px-[40px] rounded-lg flex gap-2 items-center",
+    outline ? "border-secondary-yellow text-secondary-dark bg-white" : "text-white border-primary-skyblue bg-primary-skyblue"
+  )}>
+    {text}
+    <slot />
+  </button>
+</a>
