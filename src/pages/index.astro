@@ -1,13 +1,23 @@
 ---
 import Layout from '../layouts/Layout.astro';
-import MainComponent from '../components/MainComponent.astro';
+import GetMore from '../components/sections/GetMore.astro';
+import ProjectManagement from '../components/sections/ProjectManagement.astro';
+import UseExtension from '../components/sections/UseExtension.astro';
+import Customise from '../components/sections/Customise.astro';
+
 import CardPlan from '../components/cards/CardPlan.astro';
 ---
 
 <Layout title="Welcome to Astro.">
-	<main class="pt-20">
+
+	<main class="pt-24 space-y-10">
+		<!-- <GetMore />
+		<ProjectManagement/>
+		<UseExtension/> -->
+		<Customise/>
+
 		<!-- <MainComponent /> -->
-		<CardPlan mainly={false}/>
+		<!-- <CardPlan mainly={false}/> -->
 	</main>
 </Layout> 
   
