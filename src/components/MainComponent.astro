@@ -1,7 +1,7 @@
 ---
 import { twMerge } from 'tailwind-merge'
 import Button from './Button.astro';
-import Icon from './icon.astro';
+import Icon from './Icon.astro';
 
 interface Props {
   title: string;
@@ -15,7 +15,7 @@ interface Props {
 const { title, body, buttonLink, buttonText, mainly, withoutImage} = Astro.props;
 ---
 
-<div class={twMerge("flex flex-col text-white text-center         justify-center items-center gap-8",
+<div class={twMerge("flex flex-col text-white text-center justify-center items-center gap-8",
   mainly ? "text-secondary-dark" : "text-white"
 )}>
   <slot name="before"/>

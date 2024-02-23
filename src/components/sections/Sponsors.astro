@@ -1,0 +1,20 @@
+---
+import MainComponent from "../MainComponent.astro"
+import Icon from "../Icon.astro"
+---
+
+<section class="bg-white px-5 py-10 space-y-20">
+
+  
+  <MainComponent withoutImage mainly title="100% your data" body="The app is open source and your notes are saved to an open format, so you'll always have access to them. Uses End-To-End Encryption (E2EE) to secure your notes and ensure no-one but yourself can access them."
+  buttonText="Read more"
+  buttonLink="#sarasa"
+  >
+    <div class="mb-10" slot="before">
+      <Icon icon="data-image"/>
+    </div>
+  </MainComponent>
+  <div class="flex flex-col text-secondary-dark text-center justify-center items-center gap-8">
+    <h1 class="font-bold text-4xl">Our sponsors</h1>
+  </div>
+</section>
