@@ -20,14 +20,14 @@ const { mainly } = Astro.props
     <h3 class="font-bold text-4xl">$11.2</h3>
     <p class="font-normal text-base">Keep home and family on track</p>
     <ul class="space-y-6 pb-8">
-      <ListItem mainly={mainly}/>
-      <ListItem mainly={mainly}/>
-      <ListItem mainly={mainly}/>
-      <ListItem mainly={mainly}/>
-      <ListItem mainly={mainly}/>
-      <ListItem mainly={mainly}/>
+      <ListItem mainly={mainly} text='Sync unlimited devices'/>
+      <ListItem mainly={mainly} text='10 GB monthly uploads'/>
+      <ListItem mainly={mainly} text='200 MB max. note size'/>
+      <ListItem mainly={mainly} text='Customize Home dashboard and access extra widgets'/>
+      <ListItem mainly={mainly} text='Connect primary Google Calendar account'/>
+      <ListItem mainly={mainly} text='Add due dates, reminders, and notifications to your tasks'/>
     </ul>
-    <Button outline text="Get Started" link='sarasa'/>
+    <Button outline={!mainly} text="Get Started" link='sarasa'/>
   </div>
 
 </div>
